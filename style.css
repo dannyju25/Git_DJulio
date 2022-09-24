@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+ 
+    font-size: 56%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background-color: #6a60c2;
+}
+
+/* Main container */
+.main{
+    width: 100%;
+    height: 100vh;
+    padding: 25px 0 0;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    align-items: center;
+
+    animation: fadeIn 2s ease 1 forwards;
+}
+
+/* principal title on main container */
+.mainTitle{
+    font-size: 4rem;
+    font-style:normal;
+    text-transform: uppercase;
+}
+
+/* Container Gifs */
+.mainTitleGif,
+.containerImage{
+    width: 50%;
+    padding: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 3px solid #c5f009;
+    color: green;
+
+}
+
+/* Container of form */
+.mainTitleGif form{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem; 
+    color: rgb(241, 234, 234);
+    font-style:normal;
+    gap: 40px;
+}
+
+.mainTitleGif form input{
+    text-align: center;
+    height: 25px;
+    border-radius: 3px;
+
+    background-color: transparent;
+    border: 10px solid #145d7a;
+}
+
+/*.button_gif-button{*/
+.mainTitleGif{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 3px solid #145d7a;
+    font-weight: bold;
+    background-color: rgb(170, 160, 214);
+    cursor: pointer;
+    transition: all .2s;
+
+}
+
+.mainTitleGif:hover{
+    transition: all .5s;
+    background-color: #de7be7;
+    color: rgb(29, 12, 59);
+}
+
+
+.containerImage{
+    flex-direction: column;
+    
+}
+
+.containerImage{
+    width: 300px;
+    padding: 10px 15px; 
+    border: 2px solid #145d7a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.containerImage img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+.trend{
+    width:100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.div img{
+    width: 350px;
+    height: 350px;
+    gap: 50px;
+    padding:10px 10px 10px 10px;
+    border-radius: 4px;
+}
+
+
+/*
+@keyframes fadeIn {
+    from{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+} */
